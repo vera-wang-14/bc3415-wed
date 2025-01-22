@@ -10,7 +10,7 @@ def index():
 #do nothing but render template
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=1234)
 
 
 
