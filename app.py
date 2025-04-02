@@ -31,6 +31,10 @@ def sentiment_result():
     r = textblob.TextBlob(q).sentiment
     return(render_template("sentiment_result.html", r = r))
 
+@app.route("/paynow", methods=["GET", "POST"])
+def paynow():
+    return(render_template("paynow.html"))
+
 if __name__ == "__main__":
     app.run(port=1234)
 
